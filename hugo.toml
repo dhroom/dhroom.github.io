@@ -1,0 +1,103 @@
+baseURL = 'https://dhroompatel.com/'
+languageCode = 'en-us'
+title = "Dhroom Patel"
+theme = 'PaperMod'
+
+[params]
+  description = "Business student, aspiring strategist, and problem solver"
+  author = "Dhroom Patel"
+  
+  # Profile mode for homepage
+  [params.profileMode]
+    enabled = true
+    title = "Dhroom Patel"
+    subtitle = "Business Student | Strategy Enthusiast | Future Leader"
+    imageUrl = "images/profile.jpg" # Add your profile photo to static/images/
+    imageTitle = "Dhroom Patel"
+    imageWidth = 180
+    imageHeight = 180
+    
+    [[params.profileMode.buttons]]
+      name = "About"
+      url = "/about"
+    
+    [[params.profileMode.buttons]]
+      name = "Projects"
+      url = "/projects"
+    
+    [[params.profileMode.buttons]]
+      name = "Experience"
+      url = "/experience"
+    
+    [[params.profileMode.buttons]]
+      name = "Contact"
+      url = "/contact"
+
+  # Social icons
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/dhroom-patel"
+  
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/dhroom"
+  
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:dbpate@unc.edu"
+
+  # Theme settings
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  defaultTheme = "auto" # Options: light, dark, auto
+  disableThemeToggle = false
+
+  # Homepage settings
+  [params.homeInfoParams]
+    Title = "Welcome to my portfolio"
+    Content = "Exploring the intersection of business strategy, innovation, and data-driven decision making."
+
+# Menu
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 20
+  
+  [[menu.main]]
+    identifier = "experience"
+    name = "Experience"
+    url = "/experience/"
+    weight = 30
+  
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 40
+  
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 50
+
+# Taxonomies
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+# Output formats
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
